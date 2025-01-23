@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Courier+New&display=swap');
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,6 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
+    font-family: 'Cinzel', fantasy;
     /* height: 100%; */
     color: black;
     background-color: #0c2521;
@@ -284,10 +291,11 @@ nav .logo p:hover {
 }
 
 .projects-intro p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #ffffff;
     color: #000;
     margin-bottom: 3rem;
+    font-family: 'Cinzel', fantasy;
 }
 
 .project-container {
@@ -736,7 +744,7 @@ footer {
 .social-links a {
     text-decoration: none;
     color: white;
-    
+
     margin: 0 10px;
     font-size: 1.1rem;
     padding: 5px 10px;
