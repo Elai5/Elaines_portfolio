@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/them.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="new.css"> -->
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <p>cest_elaine</p>
+        </div>
+
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/pages/about.html">ABOUT</a></li>
+            <li><a href="/pages/project.html">PROJECT</a></li>
+            <li><a href="/pages/blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section id="projects">
+        <div class="projects-intro">
+            <h2>My Projects</h2>
+            <p>
+                A curated selection of my work showcasing responsive design, interactivity, and modern web development
+                practices. Click to explore each project!
+            </p>
+        </div>
+        <div class="project-container">
+            <!-- Kenya Airways Website -->
+            <div class="project-card" onclick="openModal('kenya-airline')" tabindex="0" role="button"
+                aria-label="View Kenya Airways Website Project">
+                <img src="homekq.png" alt="Kenya Airways Website Screenshot" class="project-image">
+                <h2>Kenya Airways Website</h2>
+                <p>
+                    An engaging platform for Kenya Airways customers to book flights, browse exclusive shopping
+                    catalogs,
+                    and discover travel destinations.
+                </p>
+                <!-- <span class="project-tech">HTML | CSS | JavaScript | Django</span> -->
+                <div class="project-actions">
+                    <button class="project-button"
+                        onclick="event.stopPropagation(); window.open('https://github.com/your-repo/kenya-airways', '_blank');">
+                        View Code
+                    </button>
+                    <button class="project-button"
+                        onclick="event.stopPropagation(); window.open('https://kenya-airways.demo-link.com', '_blank');">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Student Konnect Website -->
+            <div class="project-card" onclick="openModal('student-konnect')" tabindex="0" role="button"
+                aria-label="View Student Konnect Website Project">
+                <img src="skonnect.png" alt="Student Konnect Website Screenshot" class="project-image">
+                <h2>Student Konnect</h2>
+                <p>
+                    A networking platform that enables students to connect with peers, share interests, and stay
+                    informed
+                    with real-time news updates.
+                </p>
+                <!-- <span class="project-tech">HTML | CSS | JavaScript | Django</span> -->
+                <div class="project-actions">
+                    <button class="project-button"
+                        onclick="event.stopPropagation(); window.open('https://github.com/your-repo/student-konnect', '_blank');">
+                        View Code
+                    </button>
+                    <button class="project-button"
+                        onclick="event.stopPropagation(); window.open('https://student-konnect.demo-link.com', '_blank');">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Assassin's Creed Gaming Website -->
+            <div class="project-card" onclick="openModal('assassins-creed')" tabindex="0" role="button"
+                aria-label="View Assassin's Creed Gaming Website Project">
+                <img src="creed.png" alt="Assassin's Creed Gaming Website Screenshot" class="project-image">
+                <h2>Assassin's Creed Gaming</h2>
+                <p>
+                    A fully responsive website featuring an interactive quiz to recommend Assassin's Creed games and a
+                    showcase of the franchise's highlights.
+                </p>
+                <!-- <span class="project-tech">HTML | CSS | JavaScript</span> -->
+                <div class="project-actions">
+                    <button class="project-button"
+                        onclick="event.stopPropagation(); window.open('https://github.com/your-repo/assassins-creed', '_blank');">
+                        View Code
+                    </button>
+                    <button class="project-button"
+                        onclick="event.stopPropagation(); window.open('https://assassins-creed.demo-link.com', '_blank');">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Spotify Clone -->
+            <div class="project-card" onclick="openModal('spotify-clone')" tabindex="0" role="button"
+                aria-label="View Spotify Clone Project">
+                <img src="spotify.png" alt="Spotify Clone Screenshot" class="project-image">
+                <h2>Spotify Clone</h2>
+                <p>
+                    A visually accurate clone of Spotify, built to showcase advanced use of grids and flexbox for layout
+                    design.
+                </p>
+                <!-- <span class="project-tech">HTML | CSS | JavaScript</span> -->
+                <div class="project-actions">
+                    <button class="project-button"
+                        onclick="event.stopPropagation(); window.open('https://github.com/your-repo/spotify-clone', '_blank');">
+                        View Code
+                    </button>
+                    <button class="project-button"
+                        onclick="event.stopPropagation(); window.open('https://spotify-clone.demo-link.com', '_blank');">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div id="kenya-airline" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('kenya-airline')">&times;</span>
+                <h2>Kenya Airways Website</h2>
+                <img src="homekq.png" alt="Kenya Airline Screenshot">
+                <p>
+                    This platform allows Kenya Airways customers to easily search and book flights, browse an exclusive
+                    shopping catalog with categorized merchandise, and explore highlights of popular travel
+                    destinations. The
+                    intuitive interface ensures a seamless experience for users.
+                </p>
+            </div>
+        </div>
+
+        <div id="student-konnect" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('student-konnect')">&times;</span>
+                <h2>Student Konnect</h2>
+                <img src="skonnect.png" alt="Student Konnect Screenshot">
+                <p>
+                    Student Konnect provides a platform for students to create personalized accounts, connect with peers
+                    using criteria-based matching, and send messages. It also features real-time news updates powered by
+                    multiple APIs, offering students valuable insights and information.
+                </p>
+            </div>
+        </div>
+
+        <div id="assassins-creed" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('assassins-creed')">&times;</span>
+                <h2>Assassin's Creed Gaming</h2>
+                <img src="creed.png" alt="Assassin's Creed Screenshot">
+                <p>
+                    This website features an interactive quiz that recommends Assassin's Creed games based on user
+                    inputs.
+                    It also provides a visually appealing showcase of the franchise's games, alongside responsive design
+                    and
+                    sections for news and community interaction.
+                </p>
+            </div>
+        </div>
+
+        <div id="spotify-clone" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('spotify-clone')">&times;</span>
+                <h2>Spotify Clone</h2>
+                <img src="spotify.png" alt="Spotify Clone Screenshot">
+                <p>
+                    This Spotify clone recreates the original platform's layout with pixel-perfect accuracy. It utilizes
+                    grid
+                    and flexbox techniques for its design, ensuring responsiveness and modern UI standards.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <p>Technologies I've worked with:</p>
+
+        <div class="skills-container">
+            <div class="skill">
+                <img src="images/html5.jpg" alt="HTML" title="HTML">
+            </div>
+            <div class="skill">
+                <img src="images/css3.jpg" alt="CSS" title="CSS">
+            </div>
+            <div class="skill">
+                <img src="images/js.jpg" alt="JavaScript" title="JavaScript">
+            </div>
+            <div class="skill">
+                <img src="images/django.jpg" alt="Django" title="Django">
+            </div>
+            <div class="skill">
+                <img src="images/python.jpg" alt="WordPress" title="WordPress">
+            </div>
+            <div class="skill">
+                <img src="images/git.jpg" alt="Git" title="Git">
+            </div>
+            <div class="skill">
+                <img src="images/figma.jpg" alt="GitHub" title="GitHub">
+            </div>
+            <div class="skill">
+                <img src="images/canva.jpg" alt="WordPress" title="WordPress">
+            </div>
+            <div class="skill">
+                <img src="images/wordpress.jpg" alt="WordPress" title="WordPress">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="new.js"></script>
+</body>
+
+</html>
