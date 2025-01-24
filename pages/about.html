@@ -7,6 +7,10 @@
     <title>My About Page</title>
     <link rel="stylesheet" href="/css/hey.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&family=Poppins:wght@500&family=Lora&display=swap"
+        rel="stylesheet">
+
 
 </head>
 
@@ -34,30 +38,49 @@
         <div class="photo-box">
             <img src="/images/elaine.jpg" alt="Your Photo" class="about-photo">
         </div>
-        <div class="about-text">
 
+        <div class="about-text">
             <h2>About Me</h2>
             <h3>Front-End Developer || Web Automation Specialist</h3>
-            <p>
-                Hi, I’m Elaine, a Front-End Developer passionate about creating responsive, user-friendly websites. I
-                transform Figma designs into clean code using <span class="highlight">HTML5, CSS3, JavaScript, and
-                    React</span>. My goal is to deliver seamless user experiences through attention to detail and best
-                practices.<br>
+            <p class="visible-text">
+                Hi, I’m Elaine — a Front-End Developer with a passion for creating websites that are more than just
+                functional;
+                they’re <span class="highlight">alive, intuitive, and engaging</span>. I transform Figma designs into
+                responsive,
+                user-friendly websites using <span class="highlight">HTML5, CSS3, JavaScript, and React</span>, with a
+                focus on
+                delivering seamless user experiences.<br>
 
-                Beyond front-end development, I utilize <span class="highlight">Django</span> for back-end solutions and
-                <span class="highlight">Python</span> for web automation, enhancing productivity and workflows. I’m
-                excited to collaborate on innovative projects that drive impact and success.<br>
-
-                Let’s connect!
+                I don’t believe we should limit ourselves to traditional websites. I’m excited to explore technologies
+                like
+                <span class="highlight">3D.js and Next.js</span> to craft dynamic, immersive, and story-driven web
+                experiences that captivate users and keep them coming back.
             </p>
 
+            <p class="hidden-text">
+                Beyond front-end development, I leverage <span class="highlight">Django</span> for back-end solutions
+                and
+                <span class="highlight">Python</span> for web automation, streamlining workflows and enhancing
+                productivity.
+                I’m also exploring how to integrate <span class="highlight">AI</span> into software development —
+                whether to
+                reduce wait times, create smarter websites, or personalize user experiences.<br>
+
+                For me, coding isn’t just about functionality — it’s about bringing designs to life, telling stories,
+                and
+                creating interactive experiences that inspire. Let’s connect and build something extraordinary together!
+            </p>
+
+            <span class="toggle-text" onclick="toggleText()">...continue</span>
 
             <div class="cta-buttons">
-                <button class="cta-button" onclick="window.location.href='#contact'">See Projects</button>
+                <button class="cta-button" onclick="window.location.href='#projects'">See Projects</button>
                 <button class="cta-button" onclick="window.location.href='your-cv-link.pdf'" target="_blank">Download
                     CV</button>
             </div>
         </div>
+
+
     </section>
 
 

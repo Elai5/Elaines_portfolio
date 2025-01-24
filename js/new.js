@@ -36,3 +36,16 @@ window.onclick = function (event) {
         }
     });
 };
+
+function toggleText() {
+    const hiddenText = document.querySelector('.hidden-text');
+    const toggleText = document.querySelector('.toggle-text');
+
+    if (hiddenText.style.display === 'none' || hiddenText.style.display === '') {
+        hiddenText.style.display = 'block';
+        toggleText.textContent = '... Read Less';
+    } else {
+        hiddenText.style.display = 'none';
+        toggleText.textContent = '... Read More';
+    }
+}
