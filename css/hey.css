@@ -820,6 +820,10 @@ footer {
     .blog-story {
         width: 100%;
     }
+
+    .blog-story p {
+        text-align: start;
+    }
 }
 
 
