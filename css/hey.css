@@ -961,3 +961,67 @@ footer {
     background-color: white;
     color: #0c2521;
 }
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 20px;
+    }
+
+    .contact-container {
+        padding: 20px;
+    }
+
+    .contact-container h1 {
+        font-size: 2rem;
+    }
+
+    .contact-container p {
+        font-size: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .contact-form button {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+
+    .social-links a {
+        font-size: 1rem;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 15px;
+    }
+
+    .contact-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-container p {
+        font-size: 0.9rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .social-links a {
+        font-size: 0.9rem;
+        padding: 4px 6px;
+    }
+}
