@@ -102,6 +102,7 @@ nav .logo p:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
     min-height: 80vh;
 }
 
@@ -158,8 +159,6 @@ nav .logo p:hover {
     height: 750px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
-    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); */
-
 }
 
 .photo-box .about-photo {
@@ -652,13 +651,14 @@ nav .logo p:hover {
     }
 }
 
-
 footer {
     background-color: #0c2521;
     padding: 10px 0;
     text-align: center;
     width: 100%;
     margin-top: auto;
+    position: fixed;
+    bottom: 0;
 }
 
 .social-icons {
