@@ -82,6 +82,7 @@ nav .logo p:hover {
         position: absolute;
         top: 70px;
         right: 0;
+        background-color: #0c2521;
         background: linear-gradient(45deg, #0c2521, #2a3d3d);
         width: 100%;
         text-align: center;
@@ -97,13 +98,11 @@ nav .logo p:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #ff6f33; */
     min-height: 80vh;
 }
 
 .text {
     color: white;
-    /* border: 2px solid red; */
 }
 
 .text h1 {
@@ -116,9 +115,22 @@ nav .logo p:hover {
 }
 
 .text h2 {
-    /* text-align: center; */
     padding-left: 40px;
     color: gray;
+}
+
+@media screen and (max-width: 480px) {
+    .text h1 {
+        font-size: 38px;
+    }
+
+    .text p {
+        font-size: 22px;
+    }
+
+    .text h2 {
+        font-size: 18px;
+    }
 }
 
 #about {
