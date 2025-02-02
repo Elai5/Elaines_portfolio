@@ -86,7 +86,7 @@ nav .logo p:hover {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         /* Adds a shadow */
         border-bottom: 2px solid #333;
-        border-top:2px solid #333;
+        border-top: 2px solid #333;
         /* background: linear-gradient(45deg, #0c2521, #2a3d3d); */
         width: 100%;
         text-align: center;
@@ -125,11 +125,11 @@ nav .logo p:hover {
 
 @media screen and (max-width: 480px) {
     .text h1 {
-        font-size: 40px;
+        font-size: 45px;
     }
 
     .text p {
-        font-size: 26px;
+        font-size: 29px;
     }
 
     .text h2 {
