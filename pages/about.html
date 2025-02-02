@@ -7,10 +7,13 @@
     <title>My About Page</title>
     <link rel="stylesheet" href="/css/hey.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/liberation-serif.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&family=Poppins:wght@500&family=Lora&display=swap"
         rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -36,45 +39,34 @@
 
     <section id="about">
         <div class="photo-box">
-            <img src="/images/elaine.jpg" alt="Your Photo" class="about-photo">
+            <img src="/images/hellen.jpeg" alt="Your Photo" class="about-photo">
         </div>
 
         <div class="about-text">
             <h2>About Me</h2>
             <h3>Front-End Developer || Web Automation Specialist</h3>
-            <p class="visible-text">
-                Hi, I’m Elaine — a Front-End Developer with a passion for creating websites that are more than just
-                functional;
-                they’re <span class="highlight">alive, intuitive, and engaging</span>. I transform Figma designs into
-                responsive,
-                user-friendly websites using <span class="highlight">HTML5, CSS3, JavaScript, and React</span>, with a
-                focus on
-                delivering seamless user experiences.<br>
 
-                I don’t believe we should limit ourselves to traditional websites. I’m excited to explore technologies
-                like
-                <span class="highlight">3D.js and Next.js</span> to craft dynamic, immersive, and story-driven web
-                experiences that captivate users and keep them coming back.
+            <p class="visible-text">
+                I’m a <span class="highlight">Front-End Developer</span> passionate about crafting seamless,
+                user-friendly digital experiences.
+                I specialize in transforming designs into fully <b>responsive</b>, engaging websites using
+                <span class="highlight">HTML, CSS, JavaScript, and React</span>, while also leveraging <b>automation</b>
+                to streamline workflows and improve <b>efficiency</b>.
             </p>
 
             <p class="hidden-text">
-                Beyond front-end development, I leverage <span class="highlight">Django</span> for back-end solutions
-                and
-                <span class="highlight">Python</span> for web automation, streamlining workflows and enhancing
-                productivity.
-                I’m also exploring how to integrate <span class="highlight">AI</span> into software development —
-                whether to
-                reduce wait times, create smarter websites, or personalize user experiences.<br>
-
-                For me, coding isn’t just about functionality — it’s about bringing designs to life, telling stories,
-                and
-                creating interactive experiences that inspire. Let’s connect and build something extraordinary together!
+                I’m currently exploring <span class="highlight">Three.js</span>, <span class="highlight">Next.js</span>,
+                and <span class="highlight">AI</span> to create more dynamic, interactive, and intelligent web
+                experiences.
+                I use AI to automate workflows, but I’m also interested in its potential for enhancing <strong>user
+                    interactions, personalization, and web performance.</strong>
+                While front-end is my focus, I also have experience with <span class="highlight">Django</span> for
+                back-end solutions, giving me a well-rounded perspective on building full-stack applications.
             </p>
-
             <span class="toggle-text" onclick="toggleText()">...continue</span>
 
             <div class="cta-buttons">
-                <button class="cta-button" onclick="window.location.href='#projects'">See Projects</button>
+                <button class="cta-button" onclick="window.location.href='/pages/project.html'">See Projects</button>
                 <button class="cta-button" onclick="window.location.href='your-cv-link.pdf'" target="_blank">Download
                     CV</button>
             </div>
@@ -82,8 +74,80 @@
 
 
     </section>
+    <section id="skills">
+        <h2>Tech Stack</h2>
+        <p>Technologies I've worked with:</p>
 
+        <div class="skills-container">
+            <div class="skill">
+                <div class="skill-image">
+                    <img src="/images/html5.jpg" alt="HTML Logo" title="HTML">
+                </div>
+                <p class="skill-text">HTML</p>
+            </div>
 
+            <div class="skill">
+                <div class="skill-image">
+                    <img src="/images/css3.jpg" alt="CSS Logo" title="CSS">
+                </div>
+                <p class="skill-text">CSS</p>
+            </div>
+
+            <div class="skill">
+                <div class="skill-image">
+                    <img src="/images/js.jpg" alt="JavaScript Logo" title="JavaScript">
+                </div>
+                <p class="skill-text">JavaScript</p>
+            </div>
+            <div class="skill">
+                <div class="skill-image">
+                    <img src="/images/react.png" alt="HTML Logo" title="HTML">
+                </div>
+                <p class="skill-text">React</p>
+            </div>
+            <div class="skill">
+                <div class="skill-image">
+                    <img src="/images/django.jpg" alt="Django Logo" title="Django">
+                </div>
+                <p class="skill-text">Django</p>
+            </div>
+
+            <div class="skill">
+                <div class="skill-image">
+                    <img src="/images/python.jpg" alt="Python Logo" title="Python">
+                </div>
+                <p class="skill-text">Python</p>
+            </div>
+
+            <div class="skill">
+                <div class="skill-image">
+                    <img src="/images/git.jpg" alt="Git Logo" title="Git">
+                </div>
+                <p class="skill-text">Git</p>
+            </div>
+
+            <div class="skill">
+                <div class="skill-image">
+                    <img src="/images/figma.jpg" alt="Figma Logo" title="Figma">
+                </div>
+                <p class="skill-text">Figma</p>
+            </div>
+
+            <div class="skill">
+                <div class="skill-image">
+                    <img src="/images/canva.jpg" alt="Canva Logo" title="Canva">
+                </div>
+                <p class="skill-text">Canva</p>
+            </div>
+
+            <div class="skill">
+                <div class="skill-image">
+                    <img src="/images/wordpress.jpg" alt="WordPress Logo" title="WordPress">
+                </div>
+                <p class="skill-text">WordPress</p>
+            </div>
+        </div>
+    </section>
 
 
     <footer>
