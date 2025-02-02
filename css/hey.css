@@ -382,6 +382,7 @@ footer {
         text-align: center;
         padding: 2rem;
         gap: 1rem;
+        padding-top: 50px;
     }
 
     .photo-box {
@@ -420,6 +421,28 @@ footer {
     .cta-button {
         padding: 0.6rem 1rem;
         font-size: 14px;
+    }
+}@media screen and (max-width: 480px) {
+    #skills h2 {
+        font-size: 1.6rem; /* Smaller font size for very small screens */
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Single column on very small screens */
+    }
+
+    .skill {
+        width: 90px; /* Further reduce skill width */
+    }
+
+    .skill-image {
+        width: 60px; /* Adjust image size further */
+        height: 60px;
+    }
+
+    .skill-image img {
+        width: 40px; /* Adjust image size further */
+        height: 40px;
     }
 }
 
