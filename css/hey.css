@@ -75,9 +75,7 @@ nav .logo p:hover {
         position: absolute;
         top: 60px;
         right: 0;
-        background: #34495e;
-        background-color: #ff6f33;
-        background-color: #0c2521;
+        background: linear-gradient(45deg, #0c2521, #2a3d3d);
         width: 100%;
         text-align: center;
         padding: 20px;
