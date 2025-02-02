@@ -75,7 +75,10 @@ nav .logo p:hover {
         position: absolute;
         top: 60px;
         right: 0;
-        background: linear-gradient(45deg, #0c2521, #2a3d3d);
+        background-color: #0c2521;
+        /* background: linear-gradient(45deg, #0c2521, #2a3d3d); */
+        border-bottom: 2px solid #333;
+        border-top: 2px solid #333;
         width: 100%;
         text-align: center;
         padding: 20px;
@@ -91,7 +94,12 @@ footer {
     padding: 8px 0;
     text-align: center;
     width: 100%;
-    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    /* margin-top: auto; */
+
 }
 
 .social-icons {
@@ -340,7 +348,6 @@ footer {
     /* box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); */
 }
 
-
 @media (max-width: 768px) {
     #about {
         padding: 3rem 5%;
@@ -422,26 +429,26 @@ footer {
         padding: 0.6rem 1rem;
         font-size: 14px;
     }
-}@media screen and (max-width: 480px) {
+
     #skills h2 {
-        font-size: 1.6rem; /* Smaller font size for very small screens */
+        font-size: 1.6rem;
     }
 
     .skills-container {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Single column on very small screens */
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 
     .skill {
-        width: 90px; /* Further reduce skill width */
+        width: 90px;
     }
 
     .skill-image {
-        width: 60px; /* Adjust image size further */
+        width: 60px;
         height: 60px;
     }
 
     .skill-image img {
-        width: 40px; /* Adjust image size further */
+        width: 40px;
         height: 40px;
     }
 }
@@ -506,6 +513,8 @@ footer {
     gap: 40px;
     justify-content: center;
     padding: 0 130px;
+    padding-bottom: 40px;
+    /* background-color: red; */
 }
 
 .project-card {
