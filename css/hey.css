@@ -843,6 +843,10 @@ footer {
     .blog-intro h3 {
         font-size: 22px;
     }
+
+    .blog-story p {
+        font-size: 15.5px;
+    }
 }
 
 
