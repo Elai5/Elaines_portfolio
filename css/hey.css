@@ -701,8 +701,11 @@ footer {
         padding: 0 15px;
         /* background-color: yellowgreen; */
         width: 100%;
+        padding-bottom: 30px;
     }
-
+    .projects-intro p{
+        text-align: start;
+    }
     .project-card img {
         height: 200px;
     }
