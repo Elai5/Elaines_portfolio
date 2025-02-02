@@ -20,12 +20,9 @@ body {
     flex-direction: column;
     font-family: Arial, sans-serif;
     font-family: 'Cinzel', fantasy;
-    /* height: 100%; */
     color: black;
     background-color: #0c2521;
-    /* background: linear-gradient(to left, #0c2521, #184e45, #0c2521); */
-    /* background: linear-gradient(to left, #0c2521, #184e45, #0c2521);  */
-
+    /* background-color: #031d03; */
 }
 
 nav {
@@ -35,9 +32,7 @@ nav {
     background: orangered;
     padding: 45px 20px;
     height: 60px;
-    /* background-color: black; */
     background-color: #0c2521;
-
 }
 
 nav .logo p {
@@ -85,11 +80,12 @@ nav .logo p:hover {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 70px;
         right: 0;
-        background: #34495e;
-        background-color: #ff6f33;
-        background-color: #0c2521;
+        background: #031d03;
+        background-color: #031d03;
+        /* background-color: #0c2521; */
+        /* background-color: #e64a19; */
         width: 100%;
         text-align: center;
         padding: 20px;
