@@ -39,6 +39,7 @@ nav .logo p {
     color: white;
     font-size: 24px;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav .logo p:hover {
@@ -63,6 +64,7 @@ nav .logo p:hover {
     color: white;
     font-size: 16px;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 
 .nav-links li a:hover {
@@ -112,16 +114,19 @@ nav .logo p:hover {
 
 .text h1 {
     font-size: 72px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .text p {
     font-size: 32px;
     font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .text h2 {
     padding-left: 40px;
     color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 @media screen and (max-width: 480px) {
@@ -510,8 +515,6 @@ nav .logo p:hover {
 .skill:hover .skill-image img {
     filter: brightness(0) saturate(100%) invert(41%) sepia(58%) saturate(383%) hue-rotate(97deg) brightness(95%) contrast(95%);
 }
-
-
 @media (max-width: 1200px) {
     .project-card {
         width: calc(50% - 2rem);
