@@ -121,24 +121,25 @@ footer {
 #about {
     /* font-family: Arial, sans-serif; */
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    /* align-items: center; */
     /* flex-wrap: wrap; */
-    /* margin-top: 40px; */
-    /* gap: 2rem; */
+    margin-top: 40px;
+    gap: 2rem;
     padding: 4rem 13%;
     text-align: center;
     color: #ffffff;
     color: #000;
     background-color: #fff;
     padding-top: 160px;
+    width: 100%;
 }
 
 .photo-box {
     padding: 1px;
     border-radius: 5px;
-    background-color: #0c2521;
+    /* background-color: #0c2521; */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -353,17 +354,12 @@ footer {
     #about {
         padding: 3rem 5%;
         gap: 1.5rem;
-        /* background-color: #009688; */
         width: 100%;
-        /* display: flex; */
-        /* flex-direction: column; */
     }
 
     .photo-box {
         width: 1750px;
         height: 600px;
-        background-color: transparent;
-        /* width: 50%; */
     }
 
     .photo-box .about-photo {
@@ -409,12 +405,12 @@ footer {
 
 @media (max-width: 480px) {
     #about {
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         text-align: center;
         padding: 2rem;
         gap: 1rem;
-        padding-top: 50px;
+        padding-top: 100px;
     }
 
     .photo-box {
@@ -464,7 +460,7 @@ footer {
     }
 
     .skill {
-        width: 90px;
+        width: 60px;
     }
 
     .skill-image {
