@@ -352,6 +352,8 @@ footer {
     #about {
         padding: 3rem 5%;
         gap: 1.5rem;
+        display: flex;
+        flex-direction: column;
     }
 
     .photo-box {
@@ -379,6 +381,86 @@ footer {
 
     .about-text p {
         font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #about {
+        flex-direction: row;
+        /* Ensures content stays side by side */
+        text-align: left;
+        /* Aligns text to the left for readability */
+        gap: 2rem;
+        /* background-color: hotpink; */
+        padding: 40px;
+        /* Keeps space between photo and text */
+    }
+
+    /* Adjusting the photo-box */
+    .photo-box {
+        flex: 1;
+        background-color: transparent;
+        /* Allows the photo-box to take up equal space */
+        max-width: 500px;
+        /* Restricts image width */
+        object-fit: cover;
+    }
+
+    .about-photo {
+        width: 100%;
+        height: auto;
+        /* Keeps the aspect ratio intact */
+        border-radius: 10px;
+        /* Rounded corners */
+
+
+    }
+
+    /* Adjusting the about-text */
+    .about-text {
+        flex: 2;
+        /* Makes the text take up more space */
+        max-width: 600px;
+        /* Restricts the text width */
+        padding: 2rem;
+        /* Adds padding for spacing */
+    }
+
+    .about-text h2 {
+        font-size: 2.2rem;
+        /* Adjust font size for tablets */
+    }
+
+    .about-text h3 {
+        font-size: 1.6rem;
+        /* Adjust font size for tablets */
+    }
+
+    .about-text p {
+        font-size: 1.1rem;
+        /* Makes text a bit larger for readability */
+        line-height: 1.8;
+        /* Increases line height for better spacing */
+    }
+
+    /* CTA buttons styling for tablets */
+    .cta-buttons {
+        flex-direction: row;
+        /* Keeps the buttons next to each other */
+        gap: 1rem;
+        /* Keeps a gap between buttons */
+        justify-content: center;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.2rem;
+        /* Adjusts button padding */
+        font-size: 14px;
+        /* Adjust font size */
+    }
+    .skills-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns layout for tablet */
+        gap: 2rem;
     }
 }
 
