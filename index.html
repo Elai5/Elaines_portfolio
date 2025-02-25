@@ -58,6 +58,40 @@
         </div>
     </footer>
     <script src="/js/new.js"></script>
+    <!-- <script>
+document.querySelector("h1").addEventListener("mouseover", function () {
+    this.innerHTML = this.innerText
+        .split("")
+        .map(letter => `<span style="color: ${getRandomColor()}">${letter}</span>`)
+        .join("");
+});
+
+function getRandomColor() {
+    return `hsl(${Math.random() * 360}, 100%, 70%)`;
+}
+</script> -->
+
+<script>
+    const nameElement = document.querySelector("h1");
+const originalText = nameElement.innerText;
+
+nameElement.addEventListener("mouseover", function () {
+    this.innerHTML = this.innerText
+        .split("")
+        .map(letter => `<span style="color: ${getRandomColor()}">${letter}</span>`)
+        .join("");
+});
+
+nameElement.addEventListener("mouseout", function () {
+    this.innerHTML = originalText;
+});
+
+function getRandomColor() {
+    return `hsl(${Math.random() * 360}, 100%, 70%)`;
+}
+
+</script>
+
 </body>
 
 </html>
