@@ -90,6 +90,42 @@ function getRandomColor() {
     return `hsl(${Math.random() * 360}, 100%, 70%)`;
 }
 
+
+ function getRandomColor() {
+    return `hsl(${Math.random() * 360}, 100%, 70%)`;
+  }
+
+  // Handle mousemove (for desktop)
+  document.addEventListener("mousemove", function(e) {
+    createTrail(e.clientX, e.clientY);
+  });
+
+  // Handle touchmove (for mobile devices)
+  document.addEventListener("touchmove", function(e) {
+    const touch = e.touches[0]; // Get the first touch point
+    createTrail(touch.clientX, touch.clientY);
+  });
+
+  // Function to create a new trail
+  function createTrail(x, y) {
+    const ball = document.createElement("div");
+    ball.classList.add("cursor-ball");
+
+    // Random color for each ball
+    ball.style.backgroundColor = getRandomColor();
+
+    // Position the ball at the cursor or touch location
+    ball.style.left = `${x - 10}px`;  // Offset by 10px to center it
+    ball.style.top = `${y - 10}px`;
+
+    // Append to the body
+    document.body.appendChild(ball);
+
+    // Remove the ball after animation
+    setTimeout(() => {
+      ball.remove();
+    }, 600); // Match this to the duration of the animation
+  }
 </script>
 
 </body>
