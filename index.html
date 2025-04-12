@@ -533,6 +533,23 @@
               individuals to become confident and articulate speakers.
             </p>
           </article>
+          <article class="blog-story">
+            <img
+              src="/images/gcc.jpeg"
+              alt="Google Club Portfolio Screenshot"
+              class="blog-image"
+            />
+            <h3>Winning at the Google Club Hackathon</h3>
+            <p>
+              During my time at the Google Club at Moi University, I participated
+              in a hackathon to build a
+              <strong>portfolio website</strong> in just one day. This design,
+              which earned me second place, was celebrated for its
+              <strong>creativity and responsiveness</strong>. It taught me how to
+              craft clean layouts under tight deadlines while prioritizing
+              accessibility and user experience.
+            </p>
+          </article>
         </div>
       </section>
   
@@ -540,13 +557,26 @@
         <div class="contact-container">
             <h1>Contact Me</h1>
             <p>If you’d like to get in touch, please fill out the form below or reach me via my social links.</p>
-
-            <form class="contact-form" action="#" method="POST">
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+              <!-- Web3Forms Access Key -->
+              <input type="hidden" name="access_key" value="80cf046d-5987-477d-98c6-56ed9f12b9a0">
+            
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            
+              <!-- Optional: Redirect after submission -->
+              <input type="hidden" name="redirect" value="https://yourdomain.com/thank-you.html">
+            
+              <button type="submit">Send Message</button>
+            </form>
+            
+            <!-- <form class="contact-form" action="#" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
-            </form>
+            </form> -->
 
             <div class="social-links">
                 <a href="https://github.com/Elai5" target="_blank">GitHub</a>
