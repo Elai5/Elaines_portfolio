@@ -15,6 +15,12 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+        <!-- Toastify CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+<!-- Toastify JS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
 </head>
 
 <body>
@@ -557,17 +563,14 @@
         <div class="contact-container">
             <h1>Contact Me</h1>
             <p>If you’d like to get in touch, please fill out the form below or reach me via my social links.</p>
-            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <form id="contactForm" class="contact-form" method="POST" action="#">
               <!-- Web3Forms Access Key -->
               <input type="hidden" name="access_key" value="80cf046d-5987-477d-98c6-56ed9f12b9a0">
             
               <input type="text" name="name" placeholder="Your Name" required>
               <input type="email" name="email" placeholder="Your Email" required>
               <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            
-              <!-- Optional: Redirect after submission -->
-              <input type="hidden" name="redirect" value="https://yourdomain.com/thank-you.html">
-            
+          
               <button type="submit">Send Message</button>
             </form>
             
