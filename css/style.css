@@ -153,7 +153,7 @@ nav .logo p:hover {
   color: #ffffff;
   color: #000;
   background-color: #fff;
-  padding-top: 100px;
+  padding-top: 150px;
   width: 100%;
 }
 
@@ -217,13 +217,13 @@ nav .logo p:hover {
 .main-heading {
   font-family: "Montserrat", sans-serif;
   font-size: 2.1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
   color: #e64a19;
 }
 .sub-heading {
   color: #0c2521;
   font-size: 1.3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.9rem;
 }
 .about-text p {
   margin-bottom: 2rem;
@@ -298,6 +298,7 @@ nav .logo p:hover {
   padding: 3rem;
   background-color: #ffffff;
   color: black;
+  /* height: 60vh; */
 }
 
 /* #skills h2 {
@@ -307,16 +308,9 @@ nav .logo p:hover {
   color: #e64a19;
 } */
 
-#skills p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  color: #333;
-  font-family: "Poppins", sans-serif;
-}
-
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 1rem;
   justify-items: center;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
@@ -351,11 +345,11 @@ nav .logo p:hover {
   height: 60px;
   object-fit: contain;
 }
-
-.skill-text {
-  font-size: 1rem;
+#skills p {
+  font-size: 0.9em;
+  margin-bottom: 2rem;
   color: #333;
-  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
 }
 
 .skill:hover .skill-image {
@@ -494,12 +488,11 @@ nav .logo p:hover {
   padding: 2rem;
   color: black;
   background-color: white;
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
 .projects-intro {
   text-align: center;
-  margin: 40px 0;
 }
 
 /* .projects-intro h2 {
@@ -517,13 +510,12 @@ nav .logo p:hover {
   margin-bottom: 1.3rem;
 } */
 
-.projects-intro p {
-  font-size: 18.5px;
+.sub-text {
+  font-size: 1rem;
   color: #555;
   line-height: 1.6;
   max-width: 800px;
   margin: 0 auto 10px;
-  /* color: #000; */
   font-family: "Poppins", sans-serif;
 }
 
@@ -546,23 +538,25 @@ nav .logo p:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   justify-content: center;
-  padding: 0 130px;
+  padding: 0 50px;
   padding-bottom: 40px;
+  margin-top: 20px;
   /* background-color: red; */
 }
 
 .project-card {
   position: relative;
   background-color: #0c2521;
+  /* background-color: red; */
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   overflow: hidden;
   width: 100%;
-  max-width: 750px;
+  max-width: 800px;
   text-align: center;
-  padding: 30px;
+  padding: 20px;
   border: 2px solid black;
 }
 
@@ -574,8 +568,8 @@ nav .logo p:hover {
 
 .project-card img {
   width: 100%;
-  height: 400px;
-  object-fit: cover;
+  height: 300px;
+  object-fit: contain;
   margin-bottom: 1rem;
   transition: transform 0.2s ease;
 }
@@ -588,7 +582,7 @@ nav .logo p:hover {
 }
 
 .project-card h2 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
   color: #ff6f33;
   font-weight: 700;
@@ -599,7 +593,7 @@ nav .logo p:hover {
 }
 
 .project-card p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 1.5rem;
   color: #ffffff;
   line-height: 1.5;
@@ -789,7 +783,7 @@ nav .logo p:hover {
   margin-bottom: 50px;
 }
 
-.blog-intro h2 {
+/* .blog-intro h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   margin-bottom: 10px;
@@ -802,16 +796,7 @@ nav .logo p:hover {
   font-family: "Montserrat", sans-serif;
   font-size: 1.7rem;
   margin-bottom: 0.7rem;
-}
-
-.blog-intro p {
-  font-size: 18.5px;
-  color: #555;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto 50px;
-  font-family: "Poppins", sans-serif;
-}
+} */
 
 .blog-container {
   display: flex;
