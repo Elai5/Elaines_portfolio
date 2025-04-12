@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Oswald&display=swap" rel="stylesheet">
@@ -29,10 +29,10 @@
         </div>
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">HOME</a></li>
-            <li><a href="/pages/about.html">ABOUT</a></li>
-            <li><a href="/pages/project.html">PROJECT</a></li>
-            <li><a href="/pages/blog.html">BLOG</a></li>
-            <li><a href="/pages/contact.html">CONTACT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#projects">PROJECT</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
 
@@ -43,6 +43,519 @@
             <h2>FullStack Web Developer <h2>
         </div>
     </section>
+    <section id="about">
+        <div class="photo-box">
+          <img src="/images/hellen.jpeg" alt="Your Photo" class="about-photo" />
+        </div>
+  
+        <div class="about-text">
+          <h2 class="main-heading">About Me</h2>
+          <h3 class="sub-heading">Front-End Developer || Web Automation Specialist</h3>
+  
+          <p>
+            Hi, I’m Elaine Yvette, a
+            <span class="highlight">Front-End Developer</span> with solid
+            <span class="highlight">full-stack</span> experience. I specialize in
+            building dynamic, user-friendly interfaces with
+            <span class="highlight">React</span>, and have experience with
+            back-end technologies like <span class="highlight">Django</span>. I’m
+            passionate about creating seamless digital experiences, focusing on
+            <span class="highlight">user-centric design</span> while ensuring
+            robust server-side functionality. Always eager to learn, I enjoy
+            embracing new technologies and tackling both front-end and full-stack
+            challenges. When I’m not coding, I explore new tools to further
+            improve my craft.
+          </p>
+          <p class="hidden-text">
+            I’m currently exploring <span class="highlight">Next.js</span> for
+            better server-side rendering and
+            <span class="highlight">TypeScript</span> to improve code quality. I'm
+            also diving into <span class="highlight">GraphQL</span> to optimize
+            API interactions and enhancing my
+            <span class="highlight">UI/UX design</span> skills. Always eager to
+            learn, I'm exploring the potential of
+            <span class="highlight">AI</span> in development workflows.
+          </p>
+  
+          <!-- <p class="visible-text">
+                  I’m a <span class="highlight">Front-End Developer</span> passionate about crafting seamless,
+                  user-friendly digital experiences.
+                  I specialize in transforming designs into fully <b>responsive</b>, engaging websites using
+                  <span class="highlight">HTML, CSS, JavaScript, and React</span>, while also leveraging <b>automation</b>
+                  to streamline workflows and improve <b>efficiency</b>.
+              </p>
+  
+              <p class="hidden-text">
+                  I’m currently exploring <span class="highlight">Three.js</span>, <span class="highlight">Next.js</span>,
+                  and <span class="highlight">AI</span> to create more dynamic, interactive, and intelligent web
+                  experiences.
+                  I use AI to automate workflows, but I’m also interested in its potential for enhancing <strong>user
+                      interactions, personalization, and web performance.</strong>
+                  While front-end is my focus, I also have experience with <span class="highlight">Django</span> for
+                  back-end solutions, giving me a well-rounded perspective on building full-stack applications.
+              </p> -->
+          <span class="toggle-text" onclick="toggleText()">...continue</span>
+  
+          <div class="cta-buttons">
+            <button
+              class="cta-button"
+              onclick="window.location.href='/pages/project.html'"
+            >
+              See Projects
+            </button>
+            <button
+              class="cta-button"
+              onclick="window.location.href='your-cv-link.pdf'"
+              target="_blank"
+            >
+              Download CV
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <h2 class="main-heading">Tech Stack</h2>
+        <h3 class="sub-heading">Technologies I've worked with:</h3>
+  
+        <div class="skills-container">
+          <div class="skill">
+            <div class="skill-image">
+              <img src="/images/html5.jpg" alt="HTML Logo" title="HTML" />
+            </div>
+            <p class="skill-text">HTML</p>
+          </div>
+  
+          <div class="skill">
+            <div class="skill-image">
+              <img src="/images/css3.jpg" alt="CSS Logo" title="CSS" />
+            </div>
+            <p class="skill-text">CSS</p>
+          </div>
+  
+          <div class="skill">
+            <div class="skill-image">
+              <img
+                src="/images/js.jpg"
+                alt="JavaScript Logo"
+                title="JavaScript"
+              />
+            </div>
+            <p class="skill-text">JavaScript</p>
+          </div>
+          <div class="skill">
+            <div class="skill-image">
+              <img src="/images/react.png" alt="HTML Logo" title="HTML" />
+            </div>
+            <p class="skill-text">React</p>
+          </div>
+          <div class="skill">
+            <div class="skill-image">
+              <img src="/images/django.jpg" alt="Django Logo" title="Django" />
+            </div>
+            <p class="skill-text">Django</p>
+          </div>
+  
+          <div class="skill">
+            <div class="skill-image">
+              <img src="/images/python.jpg" alt="Python Logo" title="Python" />
+            </div>
+            <p class="skill-text">Python</p>
+          </div>
+  
+          <div class="skill">
+            <div class="skill-image">
+              <img src="/images/git.jpg" alt="Git Logo" title="Git" />
+            </div>
+            <p class="skill-text">Git</p>
+          </div>
+  
+          <div class="skill">
+            <div class="skill-image">
+              <img src="/images/figma.jpg" alt="Figma Logo" title="Figma" />
+            </div>
+            <p class="skill-text">Figma</p>
+          </div>
+  
+          <div class="skill">
+            <div class="skill-image">
+              <img src="/images/canva.jpg" alt="Canva Logo" title="Canva" />
+            </div>
+            <p class="skill-text">Canva</p>
+          </div>
+  
+          <div class="skill">
+            <div class="skill-image">
+              <img
+                src="/images/wordpress.jpg"
+                alt="WordPress Logo"
+                title="WordPress"
+              />
+            </div>
+            <p class="skill-text">WordPress</p>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="projects-intro">
+          <h2 class="main-heading">My Projects</h2>
+          <h3 class="sub-heading">Where Design Transforms Into Code</h3>
+          <p>
+            Explore how my creative designs come to life through clean, efficient
+            code. From concept to deployment, these projects showcase my journey
+            in web development.
+          </p>
+          <span class="highlight">Click on card to see more!</span>
+        </div>
+  
+        <div class="project-container">
+          <!-- Student Konnect Website -->
+          <div
+            class="project-card"
+            onclick="openModal('student-konnect')"
+            tabindex="0"
+            role="button"
+            aria-label="View Student Konnect Website Project"
+          >
+            <img
+              src="/images/skonnect.png"
+              alt="Student Konnect Website Screenshot"
+              class="project-image"
+            />
+            <h2>Student Konnect</h2>
+            <p>
+              A networking platform that enables students to connect with peers,
+              share interests, and stay informed with real-time news updates.
+            </p>
+            <!-- <span class="project-tech">HTML | CSS | JavaScript | Django</span> -->
+            <div class="project-actions">
+              <button
+                class="project-button"
+                onclick="event.stopPropagation(); window.open('https://github.com/Elai5/studentkk', '_blank');"
+              >
+                View Code
+              </button>
+  
+              <button
+                class="project-button"
+                onclick="event.stopPropagation(); window.open('https://studentkonnection.onrender.com', '_blank');"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+  
+          <!-- Assassin's Creed Gaming Website -->
+          <div
+            class="project-card"
+            onclick="openModal('assassins-creed')"
+            tabindex="0"
+            role="button"
+            aria-label="View Assassin's Creed Gaming Website Project"
+          >
+            <img
+              src="/images/creed.png"
+              alt="Assassin's Creed Gaming Website Screenshot"
+              class="project-image"
+            />
+            <h2>Assassin's Creed Gaming</h2>
+            <p>
+              A fully responsive website featuring an interactive quiz to
+              recommend Assassin's Creed games and a showcase of the franchise's
+              highlights.
+            </p>
+            <!-- <span class="project-tech">HTML | CSS | JavaScript</span> -->
+            <div class="project-actions">
+              <button
+                class="project-button"
+                onclick="event.stopPropagation(); window.open('https://github.com/Elai5/assasin_creed', '_blank');"
+              >
+                View Code
+              </button>
+              <button
+                class="project-button"
+                onclick="event.stopPropagation(); window.open('https://theassasincreed.netlify.app/', '_blank');"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+  
+          <!-- Spotify Clone -->
+          <div
+            class="project-card"
+            onclick="openModal('spotify-clone')"
+            tabindex="0"
+            role="button"
+            aria-label="View Spotify Clone Project"
+          >
+            <img
+              src="/images/spotify.png"
+              alt="Spotify Clone Screenshot"
+              class="project-image"
+            />
+            <h2>Spotify Clone</h2>
+            <p>
+              A visually accurate clone of Spotify, built to showcase advanced use
+              of grids and flexbox for layout design.
+            </p>
+            <!-- <span class="project-tech">HTML | CSS | JavaScript</span> -->
+            <div class="project-actions">
+              <button
+                class="project-button"
+                onclick="event.stopPropagation(); window.open('https://github.com/Elai5/webprojects', '_blank');"
+              >
+                View Code
+              </button>
+              <button
+                class="project-button"
+                onclick="event.stopPropagation(); window.open('https://randomspotify.netlify.app/');"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+  
+          <!-- Kenya Airways Website -->
+          <div
+            class="project-card"
+            onclick="openModal('kenya-airline')"
+            tabindex="0"
+            role="button"
+            aria-label="View Kenya Airways Website Project"
+          >
+            <img
+              src="/images/homekq.png"
+              alt="Kenya Airways Website Screenshot"
+              class="project-image"
+            />
+            <h2>Kenya Airways Website</h2>
+            <p>
+              An engaging platform for Kenya Airways customers to book flights,
+              browse exclusive shopping catalogs, and discover travel
+              destinations.
+            </p>
+  
+            <!-- <span class="project-tech">HTML | CSS | JavaScript | Django</span> -->
+            <div class="project-actions">
+              <button
+                class="project-button"
+                onclick="event.stopPropagation(); window.open('https://github.com/Elai5/airline', '_blank');"
+              >
+                View Code
+              </button>
+              <button
+                class="project-button"
+                onclick="event.stopPropagation(); window.open('https://studentkonnection.onrender.com', '_blank');"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Modals -->
+        <div id="kenya-airline" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('kenya-airline')"
+              >&times;</span
+            >
+            <h2>Kenya Airways Website</h2>
+            <img src="/images/homekq.png" alt="Kenya Airline Screenshot" />
+            <p>
+              This platform allows
+              <span class="highlight">Kenya Airways customers</span> to easily
+              search and book flights, browse an
+              <span class="highlight">exclusive shopping catalog</span> with
+              categorized merchandise, and explore highlights of popular travel
+              destinations. The
+              <span class="highlight">intuitive interface</span> ensures a
+              seamless experience for users.
+            </p>
+          </div>
+        </div>
+  
+        <div id="student-konnect" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('student-konnect')"
+              >&times;</span
+            >
+            <h2>Student Konnect</h2>
+            <img src="/images/skonnect.png" alt="Student Konnect Screenshot" />
+            <p>
+              <span class="highlight">Student Konnect</span> provides a platform
+              for students to create personalized accounts, connect with peers
+              using <span class="highlight">criteria-based matching</span>, and
+              send messages. It also features
+              <span class="highlight">real-time news updates</span> powered by
+              multiple APIs, offering students valuable insights and information.
+            </p>
+          </div>
+        </div>
+  
+        <div id="assassins-creed" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('assassins-creed')"
+              >&times;</span
+            >
+            <h2>Assassin's Creed Gaming</h2>
+            <img src="/images/creed.png" alt="Assassin's Creed Screenshot" />
+            <p>
+              This website features an
+              <span class="highlight">interactive quiz</span> that recommends
+              <span class="highlight">Assassin's Creed</span> games based on user
+              inputs. It also provides a visually appealing showcase of the
+              franchise's games, alongside
+              <span class="highlight">responsive design</span> and sections for
+              <span class="highlight">news and community interaction</span>.
+            </p>
+          </div>
+        </div>
+  
+        <div id="spotify-clone" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('spotify-clone')"
+              >&times;</span
+            >
+            <h2>Spotify Clone</h2>
+            <img src="/images/spotify.png" alt="Spotify Clone Screenshot" />
+            <p>
+              This <span class="highlight">Spotify clone</span> recreates the
+              original platform's layout with pixel-perfect accuracy. It utilizes
+              <span class="highlight">grid</span> and
+              <span class="highlight">flexbox techniques</span> for its design,
+              ensuring <span class="highlight">responsiveness</span> and
+              <span class="highlight">modern UI standards</span>.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="blog">
+        <div class="blog-intro">
+          <h2>My Journey in Tech</h2>
+          <h3>Where Passion Meets Innovation</h3>
+          <p>
+            My journey goes beyond just writing code—it's about creating a lasting
+            impact. From mentoring young minds in web development to automating
+            workflows that solve real-world problems, here’s how I’ve grown and
+            contributed to the tech community.
+          </p>
+        </div>
+        <div class="blog-container">
+          <!-- Google Club Experience -->
+          <article class="blog-story">
+            <img
+              src="/images/gcc.jpeg"
+              alt="Google Club Portfolio Screenshot"
+              class="blog-image"
+            />
+            <h3>Winning at the Google Club Hackathon</h3>
+            <p>
+              During my time at the Google Club at Moi University, I participated
+              in a hackathon to build a
+              <strong>portfolio website</strong> in just one day. This design,
+              which earned me second place, was celebrated for its
+              <strong>creativity and responsiveness</strong>. It taught me how to
+              craft clean layouts under tight deadlines while prioritizing
+              accessibility and user experience.
+            </p>
+          </article>
+  
+          <!-- Volunteering: Project Digital Impact -->
+          <article class="blog-story">
+            <img
+              src="/images/prj.jpeg"
+              alt="Digital Impact Foundation Volunteering"
+              class="blog-image"
+            />
+            <h3>Inspiring Young Minds with Project Digital Impact</h3>
+            <p>
+              Volunteering with the
+              <strong>Project Digital Impact Foundation</strong> allowed me to
+              teach kids basic computer skills, creating a simple, engaging
+              interface to help them learn. Designing layouts that fostered both
+              creativity and ease of use remains one of my proudest achievements,
+              and I had the chance to share it with over five schools.
+            </p>
+          </article>
+  
+          <!-- Volunteering: Codejika -->
+          <article class="blog-story">
+            <img
+              src="/images/codee2.jpeg"
+              alt="Codejika Web Development Lesson"
+              class="blog-image"
+            />
+            <h3>Building Websites with Codejika</h3>
+            <p>
+              At <strong>Codejika</strong>, I taught secondary school students
+              HTML and CSS and showed them how to design<strong>
+                modern, user-friendly websites</strong
+              >. One memorable project was creating a landing page with
+              them—watching their excitement as their designs came to life was
+              inspiring. It reaffirmed my passion for teaching and design.
+            </p>
+          </article>
+  
+          <!-- Web Automation -->
+          <article class="blog-story">
+            <img
+              src="/images/automa.png"
+              alt="Web Automation Workflow"
+              class="blog-image"
+            />
+            <h3>Solving Real-World Problems with Web Automation</h3>
+            <p>
+              Automation is a core part of my skill set. This screenshot showcases
+              a workflow I automated for scraping data from a website and
+              populating it into a database. The clean, minimal interface was
+              designed to simplify tracking and monitoring progress. Tasks like
+              this save time and showcase how design and functionality work hand
+              in hand.
+            </p>
+          </article>
+          <!-- Toastmasters Club -->
+          <article class="blog-story">
+            <img
+              src="/images/toast.jpeg"
+              alt="Toastmasters Club Growth"
+              class="blog-image"
+            />
+            <h3>Building a Community of Communicators</h3>
+            <p>
+              As an executive member of the Toastmasters Club, I played a vital
+              role in nurturing the art of
+              <strong>public speaking and effective communication.</strong>
+              My contributions included helping the club grow to over 50 members,
+              successfully launching the club, and officially registering it. This
+              experience taught me the importance of leadership, teamwork, and
+              fostering a supportive environment for members to develop and
+              thrive. The club’s mission aligned with my passion for empowering
+              individuals to become confident and articulate speakers.
+            </p>
+          </article>
+        </div>
+      </section>
+  
+      <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <h1>Contact Me</h1>
+            <p>If you’d like to get in touch, please fill out the form below or reach me via my social links.</p>
+
+            <form class="contact-form" action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="social-links">
+                <a href="https://github.com/Elai5" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/elaine-yvette-74921524a/" target="_blank">LinkedIn</a>
+                <a href="mailto:yvettelaine007@gmail.com">Email</a>
+            </div>
+        </div>
+    </section>
+  
 
     <footer>
         <div class="social-icons">
