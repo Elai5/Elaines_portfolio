@@ -7,6 +7,12 @@ const navLinks = document.getElementById("navLinks");
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active"); // Toggle 'active' class
 });
+// Close nav on link click (mobile)
+document.querySelectorAll(".nav-links a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+  });
+});
 
 // Test Section Toggle
 const btn = document.getElementById("btn");

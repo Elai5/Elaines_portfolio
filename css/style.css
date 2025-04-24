@@ -573,13 +573,17 @@ nav .logo p:hover {
   margin-bottom: 1rem;
   transition: transform 0.2s ease;
 }
-
 .project-card img:hover {
+  border: 2px solid white;
+  border-radius: 2px;
+  box-shadow: 0px 8px 15px rgba(136, 127, 127, 0.2);
+}
+/* .project-card img:hover {
   content: "Click to view details";
   bottom: 10px;
   cursor: pointer;
   border: 1px solid wheat;
-}
+} */
 
 .project-card h2 {
   font-size: 1.2rem;
@@ -620,12 +624,6 @@ nav .logo p:hover {
 .project-button:hover {
   color: #0c2521;
   background-color: white;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Keyframes for Project Card Fade-In */
